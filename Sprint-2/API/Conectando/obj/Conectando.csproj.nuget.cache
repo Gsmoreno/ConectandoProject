@@ -1,0 +1,13 @@
+{
+  "version": 1,
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "dgSpecHash": "2TBq12K4v8PP3+DW8F3h3JMayaEz+VVj3q/bsNDD3Cvr6Ww726UCZzhH+AAVL5aKdsLptZ4yPyP1LwnJjQs9Hg==",
+=======
+  "dgSpecHash": "uxED9D+kQJz49X4G0gRg1Tl/R24qMTKFSpEm7m83m0G8GXNRzmCZa4anAjRBnZykjr3FNzRoMBOq6UURVjrWtA==",
+>>>>>>> origin/Lucas
+=======
+  "dgSpecHash": "lhdFBl258dbkOpT/+kR9KyiHKidPoLGkb0rIWGasp/CjZ2OM2YQbNSoH0Cg0vcq/IV5YZjTD6Ht2LCQ5Xt+a5w==",
+>>>>>>> origin/AlunoInscricao
+  "success": true
+}

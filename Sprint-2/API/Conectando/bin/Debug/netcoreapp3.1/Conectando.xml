@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Conectando</name>
+    </assembly>
+    <members>
+        <member name="M:Conectando.Controllers.AdministradorController.GetById(System.Int32)">
+            <summary>
+            Busca um Adm pelo id
+            </summary>
+            <param name="id">id do adm buscado</param>
+            <returns>Retorna os dados do adm buscado e um StatusCode Ok</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AdministradorController.GetAll">
+            <summary>
+            Lista todos os Adms
+            </summary>
+            <returns>Retorna uma lista com todos os Adms</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AdministradorController.Delete(System.Int32)">
+            <summary>
+            Detetar adm por id
+            </summary>
+            <param name="id">Id do amd deletado</param>
+            <returns>Retorna um StatusCode OK</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AdministradorController.Post(Conectando.Domains.Administrador)">
+            <summary>
+            Cadastra um novo adm
+            </summary>
+            <param name="adm">Novo adm</param>
+            <returns>Retorna um StatusCode OK</returns>
+            <response code="201">Se o aluno for cadastrado com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AdministradorController.Put(Conectando.Domains.Administrador,System.Int32)">
+            <summary>
+            Atualiza dados do Adm
+            </summary>
+            <param name="adm">Dados Atualizados</param>
+            <param name="id">Id do adm que será atualizado</param>
+            <returns>Retorna um StatusCode OK</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AdministradorController.TrocarSenha(System.Int32,Conectando.ViewModels.SenhaViewModel)">
+            <summary>
+            Troca a senha
+            </summary>
+            <param name="id">Id da senha que será trocada</param>
+            <param name="senha">senha atual e nova</param>
+            <returns>Retorna um statuscode OK</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AlunoController.Get">
+            <summary>
+            Busca alunos
+            </summary>
+            <returns>Retorna uma lista de alunos ou NotFound caso tenha algum erro</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AlunoController.Get(System.Int32)">
+            <summary>
+            Busca um aluno através do seu ID
+            </summary>
+            <param name="id">ID do aluno que será buscado</param>
+            <returns>Retorna um aluno buscada ou NotFound caso nenhuma seja encontrado</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AlunoController.Post(Conectando.Domains.Aluno)">
+            <summary>
+            Cadastra um novo aluno
+            </summary>
+            <param name="aluno">Objeto que será cadastrado</param>
+            <response code="201">Se o aluno for cadastrado com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AlunoController.Put(Conectando.Domains.Aluno,System.Int32)">
+            <summary>
+            Atualiza um aluno pelo ID.
+            </summary>
+            <param name="id">ID do aluno que será atualizado</param>
+            <param name="aluno">Objeto a ser atualizado</param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AlunoController.Delete(System.Int32)">
+            <summary>
+            Deleta um aluno pelo ID.
+            </summary>
+            <param name="id">ID do aluno que será deletado</param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.CursoController.Get">
+            <summary>
+            Busca cursos
+            </summary>
+            <returns>Retorna uma lista de cursos ou NotFound caso tenha algum erro</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.CursoController.Get(System.Int32)">
+            <summary>
+            Busca um curso através do seu ID
+            </summary>
+            <param name="id">ID do curso que será buscado</param>
+            <returns>Retorna um curso buscada ou NotFound caso nenhuma seja encontrado</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.CursoController.Post(Conectando.Domains.Curso)">
+            <summary>
+            Cadastra um novo curso
+            </summary>
+            <param name="curso">Objeto que será cadastrado</param>
+            <response code="201">Se o curso for cadastrado com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.CursoController.Put(Conectando.Domains.Curso,System.Int32)">
+            <summary>
+            Atualiza um curso pelo ID.
+            </summary>
+            <param name="id">ID do curso que será atualizado</param>
+            <param name="curso">Objeto a ser atualizado</param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.CursoController.Delete(System.Int32)">
+            <summary>
+            Deleta um curso pelo ID.
+            </summary>
+            <param name="id">ID do curso que será deletado</param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EmpresaController.Get">
+            <summary>
+            Lista as empresas
+            </summary>
+            <returns>Uma lista de empresas</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EmpresaController.GetById(System.Int32)">
+            <summary>
+            Lista uma empresa pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns>Lista das empresas pelo id</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EmpresaController.Post(Conectando.Domains.Empresa)">
+            <summary>
+            Cadastra uma nova empresa
+            </summary>
+            <param name="novaEmpresa">Objeto que será cadastrado</param>
+            <returns>Uma nova empresa cadastrada</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EmpresaController.Put(Conectando.Domains.Empresa,System.Int32)">
+            <summary>
+            Atualiza uma empresa pelo Id
+            </summary>
+            <param name="atualizarEmpresa"></param>
+            <param name="id"></param>
+            <returns>Atualização dos dados da empresa</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EmpresaController.Delete(System.Int32)">
+            <summary>
+            Deleta uma empresa pelo Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EnderecoController.GetById(System.Int32)">
+            <summary>
+            Busca Endereço atraves do id
+            </summary>
+            <param name="id">Id do endereço que será buscado</param>
+            <returns>Retorna um endereço e um StatusCode de OK</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EnderecoController.Detele(System.Int32)">
+            <summary>
+            Deleta um Endereço por id
+            </summary>
+            <param name="id">ID do endereço que será deletado</param>
+            <returns>Retorna um StatusCode OK</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EnderecoController.Put(Conectando.Domains.Endereco,System.Int32)">
+            <summary>
+            Atualiza um endereço
+            </summary>
+            <param name="endereco">Endereço alterado</param>
+            <param name="id">Id do endereço que quer alrerar</param>
+            <returns>Retorna um StatusCode OK</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.EnderecoController.Post(Conectando.Domains.Endereco)">
+            <summary>
+            Cadastra um novo endereço
+            </summary>
+            <param name="endereco">Novo endereço</param>
+            <returns>Retorna um id primario da tabela</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Get">
+            <summary>
+            Busca inscrições
+            </summary>
+            <returns>Retorna uma lista de inscrições ou NotFound caso tenha algum erro</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Get(System.Int32)">
+            <summary>
+            Busca uma inscrição através do seu ID
+            </summary>
+            <param name="id">ID da inscrição que será buscado</param>
+            <returns>Retorna uma inscrição buscada ou NotFound caso nenhuma seja encontrado</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Post(Conectando.Domains.Inscricao)">
+            <summary>
+            Cadastra uma nova inscrição
+            </summary>
+            <param name="inscricao">Objeto que será cadastrado</param>
+            <response code="201">Se a inscrição for cadastrada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Put(Conectando.Domains.Inscricao,System.Int32)">
+            <summary>
+            Atualiza uma inscrição pelo ID.
+            </summary>
+            <param name="id">ID da inscrição que será atualizada</param>
+            <param name="inscricao">Objeto a ser atualizado</param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Delete(System.Int32)">
+            <summary>
+            Deleta uma inscrição pelo ID.
+            </summary>
+            <param name="id">ID da inscrição que será deletada</param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.LoginController.Login(Conectando.ViewModels.LoginViewModel)">
+            <summary>
+            Login no sistema
+            </summary>
+            <param name="model">Objeto de base para login</param>
+            <response code="200">Se o login ocorrer com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsAlunoController.Get">
+            <summary>
+            Lista todos as Tags
+            </summary>
+            <returns>Uma lista de tags ligadas a alunos e um status code 200 - Ok</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsAlunoController.GetById(System.Int32)">
+            <summary>
+            Lista as tags por id
+            </summary>
+            <returns>Retorna um ok com o id buscado - Ok</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsAlunoController.Post(Conectando.Domains.TagsAluno)">
+            <summary>
+            Cadastra uma nova tag à classe aluno
+            </summary>
+            <returns>retorna um 200 como criado - Ok</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsAlunoController.Delete(System.Int32)">
+            <summary>
+            Deleta uma tag da classe ALuno
+            </summary>
+            <returns>retorna um status code de 200 - Ok</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsController.Get">
+            <summary>
+            Lista todos as Tags
+            </summary>
+            <returns>Uma lista de tags e um status code 200 - Ok</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsController.GetById(System.Int32)">
+            <summary>
+            Lista as tags por id
+            </summary>
+            <returns>Uma tag e um status code 200 - Ok</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsController.Post(Conectando.Domains.Tags)">
+            <summary>
+            Cadastra uma nova tag
+            </summary>
+            <returns> Um status code de 200 - Ok</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsController.Put(System.Int32,Conectando.Domains.Tags)">
+            <summary>
+            Atualiza as tags buscando elas por id
+            </summary>
+            <returns> Uma Tag atualizada e um status code 200 - Ok</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsController.Delete(System.Int32)">
+            <summary>
+            Deleta uma tag buscando por id
+            </summary>
+            <returns> um status de 200 - Ok</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsVagaController.Get">
+            <summary>
+            Lista todos as Tags
+            </summary>
+            <returns>Uma lista de usuários e um status code 200 - Ok</returns>
+        </member>
+        <member name="M:Conectando.Controllers.TagsVagaController.GetById(System.Int32)">
+            <summary>
+            Lista as tags por id
+            </summary>
+            <returns>Uma lista de usuários e um status code 200 - Ok</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsVagaController.Post(Conectando.Domains.TagsVaga)">
+            <summary>
+            Cadastra uma nova Tag à classe vaga
+            </summary>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.TagsVagaController.Delete(System.Int32)">
+            <summary>
+            Deleta Tag da classe vaga
+            </summary>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.Get">
+            <summary>
+            Listar vagas
+            </summary>
+            <returns>Lista de vagas</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.GetById(System.Int32)">
+            <summary>
+            Buscar uma vaga pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns>A vaga selecionada</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.Post(Conectando.Domains.Vaga)">
+            <summary>
+            Cadastra uma nova vaga
+            </summary>
+            <param name="novaVaga"></param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.Put(Conectando.Domains.Vaga,System.Int32)">
+            <summary>
+            Atualiza uma vaga
+            </summary>
+            <param name="atualizarVaga"></param>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.Delete(System.Int32)">
+            <summary>
+            Deleta uma vaga
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.GetInscricoes">
+            <summary>
+            Lista as vagas com as inscrições
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

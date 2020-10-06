@@ -1,0 +1,54 @@
+USE Conectando;
+GO
+
+-- SELECT ALL FROM TABLES
+
+SELECT * FROM Aluno;
+SELECT * FROM Administrador;
+SELECT * FROM Empresa;
+SELECT * FROM Endereco;
+SELECT * FROM Curso;
+SELECT * FROM Endereco;
+SELECT * FROM Tags;
+SELECT * FROM TagsAluno;
+SELECT * FROM TagsVaga;
+GO
+
+-- LISTAR TODOS OS USUÁRIOS CADASTRADOS
+SELECT
+	U.Nome AS Aluno,
+	U.Email,
+	U.cpf,
+	U.Semestre 
+FROM Aluno U
+
+-- LISTAR TODAS AS INSTITUIÇÕES CADASTRADAS (CNPJ, NOME FANTASIA, CNAE, EMAIL)
+SELECT 
+	I.CNPJ
+	,I.NomeFantasia
+	,I.CNAE
+	,I.Email
+FROM Empresa I;
+GO
+
+--LISTAR TODOS ADMS CADASTRADOS (CPF, EMAIL, RG)
+SELECT
+	A.CPF
+	,A.Email
+	,A.RG
+FROM Administrador A
+
+--LISTAR AS TAGS BUSCADA POR ID E LISTAR SUAS VAGAS E OS ALUNOS
+SELECT 
+	T.IdTags
+	,T.Nome
+	,TA.IdAluno
+	,TV.IdVaga
+FROM Tags T
+INNER JOIN TagsAluno TA
+ON TA.IdAluno = TA.IdAluno
+INNER JOIN TagsVaga TV
+ON TV.IdVaga = TV.IdVaga
+WHERE T.IdTags = 2;
+GO
+
