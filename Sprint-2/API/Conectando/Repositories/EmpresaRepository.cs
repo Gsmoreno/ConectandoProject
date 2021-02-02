@@ -76,9 +76,24 @@ namespace Conectando.Repositories
             Update(empresaBuscada);
         }
 
+        public IEnumerable<Empresa> GetInclude()
+        {
+            return ctx.Empresa.Include(x => x.IdEnderecoNavigation).Include(x => x.Vaga).ToList();
+        }
+
+        public List<Empresa> Listar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Empresa ListarPorId(int id)
+        {
+            return ctx.Empresa.Include(x => x.IdEnderecoNavigation).Include(x => x.Vaga).FirstOrDefault(x => x.IdEmpresa == id);
+        }
+
         public Empresa Login(string entrada, string senha)
         {
-            return ctx.Empresa.FirstOrDefault(u => (u.Email == entrada) || (u.Cnpj == entrada) && (u.Senha == senha));
+            return ctx.Empresa.FirstOrDefault(u => (u.Email == entrada) && (u.Senha == senha) || (u.Cnpj == entrada) && (u.Senha == senha));
         }
     }
 

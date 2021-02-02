@@ -33,13 +33,14 @@ namespace Conectando.Contexts
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
 
-                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-75V5O1R\\SQLEXPRESS; Initial Catalog=Conectando; Integrated Security=True;");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-75V5O1R\\SQLEXPRESS; Initial Catalog=Conectando; Integrated Security=True;");
 
                 //optionsBuilder.UseSqlServer("Data Source=LAPTOP-7S7DFPHF\\SQLEXPRESS; Initial Catalog=Conectando; Integrated Security=True;");
 
                 //optionsBuilder.UseSqlServer("Data Source=DESKTOP-HPANU82\\SQLEXPRESS; Initial Catalog=Conectando; Integrated Security=True;");
 
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-B8JV198\\SQLEXPRESS; Initial Catalog=Conectando; Integrated Security=True;");
+                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-B8JV198\\SQLEXPRESS; Initial Catalog=Conectando; Integrated Security=True;");
+
 
             }
         }

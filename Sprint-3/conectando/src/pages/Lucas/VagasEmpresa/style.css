@@ -1,0 +1,78 @@
+.Offvagas{
+    display: flex;
+    
+    max-width: 70vw;
+    min-height: 5vh;
+    max-height: 10vh;
+    background-color: #F1EDEE;
+    color: #6D6969;
+    padding: 2em;
+    border-radius: 15px;
+
+    background-color: #F1EDEE;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 1em 0;
+}
+
+.midVagasEmpresa{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.topp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    width: 60%;
+}
+
+
+#head{
+    display: flex;
+    justify-content: space-around;
+}
+
+#head h1{
+    color: #6D6969;
+}
+
+
+.separar{
+    display: flex;
+
+    width: 58vw;
+    padding-right: 0.5em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.separar img{
+    max-width: 6.13vh;
+    padding-right: 0.5em;
+}
+
+
+
+.Offvagas h1{
+    color: #6D6969;
+}
+
+@media(max-width: 600px){
+    h1{
+        font: 700 20px 'Noto Sans', sans-serif;
+    }
+
+    
+}
+
+
+

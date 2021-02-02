@@ -10,5 +10,11 @@ namespace Conectando.Interfaces
     {
         void Atualizar(Empresa empresa, int id);
         Empresa Login(string entrada, string senha);
+
+        List<Empresa> Listar();
+
+        Empresa ListarPorId(int id);
+
+        IEnumerable<Empresa> GetInclude();
     }
 }

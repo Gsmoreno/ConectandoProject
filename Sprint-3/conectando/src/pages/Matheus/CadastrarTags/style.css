@@ -1,0 +1,56 @@
+.div-menu{
+    display: flex;
+    width: 40vw;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.sublinhar{
+    text-decoration: underline;
+}
+
+#div_Tags_{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.TagsEstilo{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    background-color: #3ABDE6;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#CadastroTag_tags{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#CadastroTag_tags p{
+    margin-left: 20%;
+}
+
+#button_CadastroTag{
+    width: 100px;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#input_CadastroTag{
+    height: 30px;
+    width: 300px;
+    margin: 0 auto;
+}

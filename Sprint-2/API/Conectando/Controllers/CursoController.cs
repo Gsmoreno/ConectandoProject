@@ -63,7 +63,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // POST api/<Curso>
-        [Authorize]
+        [Authorize(Roles = "Aluno,Empresa,Administrador")]
         [HttpPost]
         public IActionResult Post(Curso curso)
         {
@@ -89,7 +89,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // PUT api/<Curso>/{id}
-        [Authorize]
+        [Authorize(Roles = "Aluno,Empresa,Administrador")]
         [HttpPut("{id}")]
         public IActionResult Put(Curso curso, int id)
         {
@@ -113,7 +113,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // DELETE api/<Curso>/{id}
-        [Authorize]
+        [Authorize(Roles = "Aluno,Empresa,Administrador")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

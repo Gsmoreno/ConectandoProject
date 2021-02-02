@@ -67,6 +67,22 @@
             <response code="200">Se a lista for acessada com sucesso</response>
             <response code="400">Erro em alguma parte da requisição</response>
         </member>
+        <member name="M:Conectando.Controllers.AlunoController.GetId(System.Int32)">
+            <summary>
+            Busca um Aluno por id
+            </summary>
+            <returns>Retorna um aluno ou NotFound caso tenha algum erro</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.AlunoController.GetAlunosEmpresa(System.Int32)">
+            <summary>
+            Busca alunos
+            </summary>
+            <returns>Retorna uma lista de alunos ou NotFound caso tenha algum erro</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
         <member name="M:Conectando.Controllers.AlunoController.Get(System.Int32)">
             <summary>
             Busca um aluno através do seu ID
@@ -143,7 +159,7 @@
             <response code="200">Se a requisição ocorrer da forma esperada</response>
             <response code="400">Erro em alguma parte da requisição</response>
         </member>
-        <member name="M:Conectando.Controllers.EmpresaController.Get">
+        <member name="M:Conectando.Controllers.EmpresaController.GetAllIncludes">
             <summary>
             Lista as empresas
             </summary>
@@ -151,7 +167,7 @@
             <response code="200">Se a lista for acessada com sucesso</response>
             <response code="400">Erro em alguma parte da requisição</response>
         </member>
-        <member name="M:Conectando.Controllers.EmpresaController.GetById(System.Int32)">
+        <member name="M:Conectando.Controllers.EmpresaController.ListarPor(System.Int32)">
             <summary>
             Lista uma empresa pelo ID
             </summary>
@@ -239,6 +255,24 @@
             </summary>
             <param name="id">ID da inscrição que será buscado</param>
             <returns>Retorna uma inscrição buscada ou NotFound caso nenhuma seja encontrado</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Get2(System.Int32)">
+            <summary>
+            Busca uma inscrição através do ID de um aluno
+            </summary>
+            <param name="id">ID do aluno que será buscado</param>
+            <returns>Retorna uma lista de inscrições buscada ou NotFound caso nenhuma seja encontrado</returns>
+            <response code="200">Se a lista for acessada com sucesso</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.InscricaoController.Buscar(System.Int32)">
+            <summary>
+            Busca inscrições através do ID de uma vaga
+            </summary>
+            <param name="id">ID da vaga</param>
+            <returns>Retorna uma lista de alunos buscada ou NotFound caso nenhuma seja encontrado</returns>
             <response code="200">Se a lista for acessada com sucesso</response>
             <response code="400">Erro em alguma parte da requisição</response>
         </member>
@@ -392,7 +426,33 @@
             <response code="200">Se a requisição ocorrer da forma esperada</response>
             <response code="400">Erro em alguma parte da requisição</response>
         </member>
+        <member name="M:Conectando.Controllers.VagaController.DetVaga(System.Int32)">
+            <summary>
+            Buscar o detalhe da vaga por Id
+            </summary>
+            <param name="id"></param>
+            <returns>A vaga selecionada</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.BuscarVagas(System.Int32)">
+            <summary>
+            Buscar vagas pelo ID da empresa
+            </summary>
+            <param name="id"></param>
+            <returns>as vagas de uma empresa</returns>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
         <member name="M:Conectando.Controllers.VagaController.Post(Conectando.Domains.Vaga)">
+            <summary>
+            Cadastra uma nova vaga
+            </summary>
+            <param name="novaVaga"></param>
+            <response code="200">Se a requisição ocorrer da forma esperada</response>
+            <response code="400">Erro em alguma parte da requisição</response>
+        </member>
+        <member name="M:Conectando.Controllers.VagaController.PostId(Conectando.Domains.Vaga)">
             <summary>
             Cadastra uma nova vaga
             </summary>

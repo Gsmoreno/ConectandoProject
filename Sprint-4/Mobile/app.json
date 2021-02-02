@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    },
+    "name": "conectando",
+    "slug": "conectando",
+    "version": "1.0.0",
+    "orientation": "portrait",
+<<<<<<< HEAD
+    "icon": "./assets/icon2.png",
+=======
+    "icon": "./assets/icon.png",
+>>>>>>> fcd888da5bccbf5ac88bae5bdff43f38b75a1c21
+    "splash": {
+      "image": "./assets/bg.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon2.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon2.png"
+    }
+  }
+}

@@ -40,7 +40,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // POST api/<Login>
-        [HttpPost]
+        [HttpPost]  
         public IActionResult Login(LoginViewModel model)
         {
 
@@ -160,7 +160,7 @@ namespace Conectando.Controllers
                                     issuer: "Conectando.WebApi",                // emissor do token
                                     audience: "Conectando.WebApi",              // destinatário do token
                                     claims: claims,                          // dados definidos acima
-                                    expires: DateTime.Now.AddMinutes(30),    // tempo de expiração
+                                    expires: DateTime.Now.AddMinutes(30),       // tempo de expiração
                                     signingCredentials: creds                // credenciais do token
                                 );
 
@@ -234,6 +234,39 @@ namespace Conectando.Controllers
                                     new Claim(JwtRegisteredClaimNames.Jti, aluno.IdAluno.ToString()),
                                     new Claim(ClaimTypes.Role, "Aluno") // MUDAR ESSA LINHA QUANDO FOR ADD ADM
                                 };
+
+                                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("conectando-key-auth"));
+
+                                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                                var token = new JwtSecurityToken(
+                                    issuer: "Conectando.WebApi",                // emissor do token
+                                    audience: "Conectando.WebApi",              // destinatário do token
+                                    claims: claims,                          // dados definidos acima
+                                    expires: DateTime.Now.AddMinutes(30),    // tempo de expiração
+                                    signingCredentials: creds                // credenciais do token
+                                );
+
+                                return Ok(new
+                                {
+                                    token = new JwtSecurityTokenHandler().WriteToken(token)
+                                });
+                            }
+
+                            Empresa empresa = _empresaRepository.Login(model.Entrada, model.Senha);
+
+
+                            if (empresa != null)
+                            {
+                                //payload
+
+                                var claims = new[]
+                                {
+                                new Claim(JwtRegisteredClaimNames.Email, empresa.Email),
+                                new Claim(JwtRegisteredClaimNames.UniqueName, empresa.Cnpj),
+                                new Claim(JwtRegisteredClaimNames.Jti, empresa.IdEmpresa.ToString()),
+                                new Claim(ClaimTypes.Role, "Empresa") // MUDAR ESSA LINHA QUANDO FOR ADD ADM
+                            };
 
                                 var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("conectando-key-auth"));
 

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+#headerAluno{
+    background: linear-gradient(270deg, #FF0000 -1.53%, #FF0000 -1.52%, #950000 -1.51%, #FE0000 82.37%);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#href{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#fotoHeader{
+    height: 6.6vh;
+    border-radius: 50%;
+    margin-right: 2vw;   
+    margin-left: 0.5vw;
+}
+
+#icone{
+    padding-left: 0.8vw;
+    padding-top: 3vh;
+    max-height: 7vh;
+    min-height: 7vh;
+
+}
+
+#bottom{
+        line-height:0;
+        width:0;
+        height:0;
+        border-style: solid;
+        border-color: #FF0000 white white #FF0000;
+        border-width: 3vh 4vh 0vh 17vh;
+}
+

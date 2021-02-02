@@ -1,0 +1,68 @@
+.icon{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.icones{
+    width: 25px;
+    height: 25px;
+}
+
+.principal{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.divs{
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.infos{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+
+.demaisInfos{
+    width: 80vw;
+    margin: 0 auto
+}
+
+.div1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infoPrincipal{
+    width: 88vw;
+    border-radius: 5px;
+    padding: 5vh 0;
+    margin-left: auto;
+    display: flex;
+    background-color: #F1EDEE;
+    justify-content: space-around;
+}
+
+.divTags{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.tags{
+    display: flex;
+}
+
+.tags p{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: #3ABDE6;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+

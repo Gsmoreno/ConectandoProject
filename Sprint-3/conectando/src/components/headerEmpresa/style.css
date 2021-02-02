@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+
+
+}
+
+#headerEmpresa{
+    background: linear-gradient(90deg, #2F8AB7, #3496c7,#3ABDE6 , #3ABDE6 );
+    
+    height: 8vh;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#icone{
+    display: flex;
+    
+    max-height: 7vh;
+    min-height: 7vh;
+
+    padding-right: 1vw;
+    padding-top: 2vh;
+
+    transform: scaleX(1);
+}
+
+#hreff{
+    display: flex;
+    align-items: center;
+}
+
+
+#fotoHeader{
+    height: 6.6vh;
+    border-radius: 50%;
+    margin-right: 1vw;   
+    margin-left: 1vw;
+
+
+}
+
+#bottomEmpresa{
+    /* line-height:0;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-color: #FF0000 white white #FF0000;
+    border-width: 4vh 0vh 2vh 17vh; */
+
+    line-height:0;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-color: #3ABDE6 #3ABDE6 white white;
+    border-width: 4vh 17vh 0vw 3vw;
+        
+
+    
+}
+
+#width{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width:600px){
+        #header{
+            background: linear-gradient(90deg, #3ABDE6 );
+        }
+        
+        #bottomEmpresa{
+            line-height:0;
+            width:0;
+            height:0;
+            border-style: solid;
+            border-color: #3ABDE6 #3ABDE6 white white;
+            border-width: 4vh 17vh 0vw 3vw;
+                
+        
+            
+        }
+        
+
+}
+
+
+
+
+
+
+

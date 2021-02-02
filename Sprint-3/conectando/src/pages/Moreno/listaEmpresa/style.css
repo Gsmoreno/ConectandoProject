@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    list-style-type: none;
+    justify-content: center;
+    
+    
+    
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 18px;
+    padding-left: 73vw;
+    
+}
+
+.menulista{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    color: #6D6969;
+
+}
+
+nav ul > li{
+    padding-left: 2em;
+    
+}
+
+nav ul > li > a{
+    color: #6D6969;
+    
+}
+
+nav hr{
+    display: flex;
+    width: 97vh;
+    height: 0;
+    
+    
+
+}
+
+.hr{
+    display: flex;
+    justify-content: center;
+    height: 15px;
+}
+
+.menulista  a {
+    display: block;
+    font-size: 30px;
+    
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.cool-link::after{
+    content:'';
+    display: block;
+    width: none;
+    height: 2px;
+    border-bottom: 5px  solid #6D6969;
+    transition: width .5s;
+    
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .5s;
+    
+}
+
+/*==============FIM-NAV=======================*/
+
+
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+.containerEmpresa{
+    max-width: 56vw;
+    max-height: 24vh; 
+    background: #F1EDEE;
+    color: #6D6969;
+    padding: 2em;
+    border-radius: 15px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* overflow-y: scroll;  */
+/* ::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 15px;
+    border-radius: 10px;
+    background: black; 
+    
+} */
+
+.ata li{
+    width: 17vw;
+    height: 5vh;
+    margin: 0 2em;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+.empresaa{
+    margin-top: 7vh;
+}
+
+.empresaa a{
+    color:#FF0000;
+    display: flex;
+    justify-content: flex-end;
+    font-style: bold;
+}
+
+
+
+.partecima {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+}
+
+.partebaixo  {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5em;
+
+}
+
+h2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.hrr{
+    display: flex;
+    flex-direction: row;
+    width: 1vw;
+    height: 35vh;
+}
+
+.ata{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaa img{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 1em;
+}
+
+
+#div_Escondida{
+    display: none;
+    background-color: rgb(214, 214, 214);
+}
+
+.divs_Escondidas{
+    display: none;
+}
+
+
+

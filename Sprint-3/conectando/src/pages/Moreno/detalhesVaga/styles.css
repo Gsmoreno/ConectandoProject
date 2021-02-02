@@ -1,0 +1,195 @@
+/* Compartilhados */
+span, li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: 400 16px Montserrat, sans-serif;
+}
+
+svg {
+    margin-right: 0.5em;
+}
+
+.espaco{
+    margin: 1em 0;
+}
+
+.align{
+    margin-left: 2.2em;
+}
+
+.espacoTitulos{
+    margin-top: 0.5em;
+    font: 400 16px Montserrat, sans-serif;
+}
+
+/* Página */
+
+.containerVaga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em;
+
+    color: #6D6969;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.bonus{
+    font: 400 16px Montserrat, sans-serif;
+}
+
+.containerCinza{
+    width: 100%;
+    height: 15em;
+    background-color: #F1EDEE;
+    border-radius: 15px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+}
+
+.empresa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.empresa h2 {
+    padding-left: 0.5em;
+}
+
+.infos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.infos ul div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.infos ul li{
+    width: 14vw;
+    margin: 0 2em;
+}
+
+/* MAIN */
+
+.main{
+    width: 100%;
+}
+
+.main h2{
+    color: #4E4E4E;
+    
+}
+
+.detalhesdois {
+    margin: 3em 0;
+}
+
+.meio2{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 3em 0;
+
+}
+
+.requisitos {
+    max-width: 50%;
+    left: auto;
+}
+
+.requisitos li{
+    margin-top: 0.5em;
+}
+
+.complementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.complementos span h3{
+    display: flex;
+    align-items: center;
+}
+
+.tags{
+    margin: 3em 0;
+}
+
+.tags ul div{
+    display: flex;
+    flex-direction: row;
+}
+
+.tags li{
+    padding: 0.5em;
+    color: black;
+}
+
+.map{
+    background-color: #4E4E4E;
+    width: 100%;
+    height: 20em;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 3em 0;
+}
+
+.button button {
+    margin-top: 1em;
+    width: 11vw;
+    height: 9vh;
+    color: #FFF;
+    background-color: #FF0000;
+    font: 400 20px Montserrat, sans-serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.button button:hover{
+    background-color: #950000;
+}

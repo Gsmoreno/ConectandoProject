@@ -1,6 +1,7 @@
 ﻿using Conectando.Contexts;
 using Conectando.Domains;
 using Conectando.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -91,7 +92,22 @@ namespace Conectando.Repositories
 
         public Aluno Login(string entrada, string senha)
         {
-            return ctx.Aluno.FirstOrDefault(u => (u.Email == entrada) || (u.Cpf == entrada) && (u.Senha == senha));
+            return ctx.Aluno.FirstOrDefault(u => (u.Email == entrada) && (u.Senha == senha) || (u.Cpf == entrada) && (u.Senha == senha));
+        }
+
+        public Aluno GetIncludeId(int id)
+        {
+            return ctx.Aluno.Include(x => x.IdCursoNavigation).Include(x => x.IdEnderecoNavigation).Include(x => x.TagsAluno).FirstOrDefault(x => x.IdAluno == id);
+        }
+
+        public IEnumerable<Aluno> GetIncludes()
+        {
+            return ctx.Aluno.Include(x => x.IdCursoNavigation).Include(x => x.IdEnderecoNavigation).Include(x => x.TagsAluno).ToList();
+        }
+
+        public List<Aluno> BuscarAlunosVagas(int id)
+        {
+            return ctx.Aluno.Include(x => x.IdCursoNavigation).Include(x => x.IdEnderecoNavigation).Include(x => x.Inscricao).ThenInclude(x => x.IdVagaNavigation).ToList();
         }
     }
 }

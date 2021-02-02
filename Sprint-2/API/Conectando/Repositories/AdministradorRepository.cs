@@ -55,7 +55,7 @@ namespace Conectando.Repositories
 
         public Administrador Login(string entrada, string senha)
         {
-            return ctx.Administrador.FirstOrDefault(u => (u.Email == entrada) || (u.Cpf == entrada) && (u.Senha == senha));
+            return ctx.Administrador.FirstOrDefault(u => (u.Email == entrada) &&(u.Senha == senha) || (u.Cpf == entrada) && (u.Senha == senha));
         }
     }
 }

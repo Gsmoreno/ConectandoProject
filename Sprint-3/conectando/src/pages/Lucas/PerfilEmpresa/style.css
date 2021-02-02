@@ -1,0 +1,112 @@
+body{
+    background-color: white;
+
+}
+
+
+.image h3{
+    font: 400 12px Montserrat, sans-serif;
+}
+
+
+
+.arrowdois{
+    display: flex;   
+}
+
+#imagemEmpresa{
+    border-radius: 100%;
+}
+
+.mid .style-input input{
+    border: none;
+}
+
+
+.mid
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.topp{
+    width: 60%;
+}
+
+.baixo{
+    display: flex;
+    align-items: flex-end;
+}
+
+#head{
+    display: flex;
+    justify-content: space-around;
+}
+
+#linha{
+    width: 100%;
+    height: 0.5px;
+    background-color: #EDEDED;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#linhanav{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image p{
+    display: flex;
+
+    justify-content: center;
+    font: 400 18px Montserrat, sans-serif;
+}
+
+
+#together{
+    min-width: 8vw;
+    height:11vh;
+    display: flex;
+}
+
+#together h3{
+    padding-left: 0.1em;
+}
+
+#together svg{
+    min-width: 3vw;
+    min-height: 4vh;
+}
+
+
+
+.bottomm{
+    display: flex;
+    justify-content: center;
+    min-width: 15vw;
+    width: 25vw;
+    min-height: 20vh;
+    
+}
+
+.bottomm button{
+color: #3ABDE6;
+}
+
+.image img{
+    max-height: 15vh;
+    min-height: 15vh;
+
+   
+    border-radius: 15px;
+}
+

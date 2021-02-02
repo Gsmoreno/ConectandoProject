@@ -1,0 +1,55 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@expo-google-fonts/montserrat": "^0.1.0",
+    "@expo-google-fonts/noto-sans": "^0.1.0",
+    "@expo/vector-icons": "^12.0.1",
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
+    "@types/cors": "^2.8.8",
+    "@types/react-navigation": "^3.4.0",
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "expo": "~39.0.2",
+    "expo-font": "^8.3.0",
+    "expo-status-bar": "~1.0.2",
+    "express": "^4.17.1",
+    "formik": "^2.2.5",
+<<<<<<< HEAD
+=======
+    "jwt-decode": "^3.1.2",
+>>>>>>> fcd888da5bccbf5ac88bae5bdff43f38b75a1c21
+    "moment": "^2.29.1",
+    "react": "^17.0.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
+    "react-native-animated-splash-screen": "^2.0.5",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-screens": "~2.10.1",
+    "react-native-svg": "^12.1.0",
+    "react-native-svg-transformer": "^0.14.3",
+<<<<<<< HEAD
+    "react-native-web": "~0.13.12",
+=======
+    "react-native-web": "^0.14.8",
+>>>>>>> fcd888da5bccbf5ac88bae5bdff43f38b75a1c21
+    "react-navigation": "^4.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@types/react": "~16.9.35",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.63.2",
+    "typescript": "~3.9.5"
+  },
+  "private": true
+}

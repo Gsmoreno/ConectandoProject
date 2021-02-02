@@ -1,0 +1,46 @@
+.footer{
+    width: 100vw;
+    font: 400 16px Montserrat, sans-serif;
+}
+
+.divisoria{
+    width: 94%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.divIFooter{
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.divInfos{
+    display: flex;
+    margin: auto 0;
+}
+
+.divInfo{
+    display: flex;
+    margin: 0 2vw;
+}
+
+.iconsF{
+    margin: auto 0;
+    margin-right: 10px;
+}
+
+.direitos{
+    width: 100vw;
+    margin-top: 5px ;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.copyright{
+    color: white;
+}

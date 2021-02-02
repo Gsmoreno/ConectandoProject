@@ -33,7 +33,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: api/<Endereco>/{id}
-        [Authorize]
+        [Authorize(Roles = "Aluno,Empresa,Administrador")]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -57,7 +57,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // DELETE: api/<Endereco>/{id}
-        [Authorize]
+        [Authorize(Roles = "Aluno,Empresa,Administrador")]
         [HttpDelete("{id}")]
         public IActionResult Detele(int id)
         {
@@ -84,7 +84,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // PUT: api/<Endereco>/{id}
-        [Authorize]
+        [Authorize(Roles = "Aluno,Empresa,Administrador")]
         [HttpPut("{id}")]
         public IActionResult Put(Endereco endereco, int id)
         {
@@ -109,7 +109,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // POST: api/<Endereco>/
-        [Authorize]
+
         [HttpPost]
         public IActionResult Post(Endereco endereco)
         {

@@ -32,7 +32,7 @@ CREATE TABLE Administrador (
 	Senha VARCHAR (255) NOT NULL,
 	RG CHAR (12) NOT NULL UNIQUE,
 	CPF CHAR (11) NOT NULL UNIQUE,
-	Foto VARCHAR (255)
+	Foto VARCHAR (max)
 );
 GO
 CREATE TABLE Curso (
@@ -47,7 +47,7 @@ CREATE TABLE Aluno (
 	Senha VARCHAR (255) NOT NULL,
 	RG CHAR (12) NOT NULL UNIQUE,
 	CPF CHAR (11) NOT NULL UNIQUE,
-	Foto VARCHAR (255),
+	Foto VARCHAR (max),
 	Whatsapp VARCHAR (255) NOT NULL,
 	Semestre INT NOT NULL,
 	FocoCarreira VARCHAR (255) NOT NULL,
@@ -78,7 +78,7 @@ CREATE TABLE Empresa (
 	CNAE CHAR (7) NOT NULL UNIQUE,
 	Whatsapp VARCHAR (255) NOT NULL,
 	PorteEmpresa VARCHAR (255) NOT NULL,
-	Foto VARCHAR (255) NOT NULL,
+	Foto VARCHAR (max) NOT NULL,
 	Situacao INT NOT NULL DEFAULT (0),
 	IdEndereco INT FOREIGN KEY REFERENCES Endereco(IdEndereco),
 );
@@ -115,4 +115,27 @@ CREATE TABLE Inscricao (
 	IdVaga INT FOREIGN KEY REFERENCES Vaga(IdVaga)
 );
 
+<<<<<<< HEAD
 DROP DATABASE Conectando;
+=======
+<<<<<<< HEAD
+DROP DATABASE Conectando;
+
+
+=======
+--ATUALIZAR FOTO type
+
+ALTER TABLE Administrador
+ALTER COLUMN Foto VARCHAR(max);
+GO
+ALTER TABLE Aluno
+ALTER COLUMN Foto VARCHAR(max);
+GO
+ALTER TABLE Empresa
+ALTER COLUMN Foto VARCHAR(max);
+
+SELECT Foto FROM Aluno;
+
+DROP DATABASE Conectando;
+>>>>>>> fcd888da5bccbf5ac88bae5bdff43f38b75a1c21
+>>>>>>> d180d8d4278408680bcc7f4e69171ec8630ca7b2

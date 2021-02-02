@@ -9,5 +9,11 @@ namespace Conectando.Interfaces
     public interface IInscricaoRepository : IRepositoryBase<Inscricao>
     {
         void Atualizar(Inscricao inscricaoAtualizado, int id);
+
+        List<Inscricao> BuscarInscricoes(int id);
+
+        IEnumerable<Inscricao> GetTudo();
+
+        public List<Inscricao> ListarVagaIdAluno(int id);
     }
 }

@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Senai\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj": {}
+    "C:\\Users\\gugus\\Desktop\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj": {}
   },
   "projects": {
-    "C:\\Senai\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj": {
+    "C:\\Users\\gugus\\Desktop\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Senai\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj",
+        "projectUniqueName": "C:\\Users\\gugus\\Desktop\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj",
         "projectName": "Conectando",
-        "projectPath": "C:\\Senai\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Senai\\Conectando\\Sprint-2\\API\\Conectando\\obj\\",
+        "projectPath": "C:\\Users\\gugus\\Desktop\\Conectando\\Sprint-2\\API\\Conectando\\Conectando.csproj",
+        "packagesPath": "C:\\Users\\gugus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gugus\\Desktop\\Conectando\\Sprint-2\\API\\Conectando\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\gugus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,6 +55,14 @@
               "target": "Package",
               "version": "[3.1.8, )"
             },
+            "Microsoft.AspNetCore.Mvc.Formatters.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -69,6 +82,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -105,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

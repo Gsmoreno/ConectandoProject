@@ -1,0 +1,92 @@
+.div-menu{
+    display: flex;
+    width: 40vw;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.div-confirmacao{
+    display: flex;
+    width: 30vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.div-confirmar{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F1EDEE;
+}
+
+
+.imgExemplo{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.empresaConfirmar{
+    width: 40vw;
+    height: 45.2vh;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.confirmar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0;
+}
+
+.aceitar{
+    color:green;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.recusar{
+    color: red;
+    width: 30px;
+    height: 30px;
+}
+
+.sublinhar{
+    text-decoration: underline;
+}
+
+#div_Escondida{
+    display: none;
+    background-color: rgb(214, 214, 214);
+}
+
+#Button_Excluir{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 5px 10px;
+}
+
+#Button_Cancelar{
+    background-color: #008550;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    margin: 20px 0;
+    padding: 5px 10px;
+}
+
+#Buttons_confirmacao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divs_Escondidas{
+    display: none;
+}

@@ -1,0 +1,275 @@
+/* HEADER */
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #FE0000 0%, #950000 100%);
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D4C2FF;
+    padding: 1.6rem 0;
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+.page-header .top-bar-container a:hover {
+    transition: opacity 0.6s;
+}
+.page-header .top-bar-container > img {
+    height: 1.6rem;
+}
+
+.page-header .header-content {
+    width: 46%;
+    margin:  auto;
+    position: relative;
+    margin: 3.2rem auto;
+}
+
+.page-header .header-content strong{
+    font: 700 3.5rem Noto Sans;
+    line-height: 4.2rem;
+    color: #FFF;
+}
+
+.page-header .header-content p{
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #FFBDBD;
+    margin-top: 2.4rem;
+}
+
+/* MAIN */
+
+#page-form {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-form .page-header .header-content{
+    margin-bottom: 6.4rem;
+}
+
+#page-form main {
+    background: #FFF;
+    width: 100%;
+    max-width: 55rem;
+    border-radius: 0.8rem;
+    margin: -3.2rem auto 3.2rem;
+    padding-top: 6.4rem;
+    overflow: hidden;
+}
+
+#page-form main fieldset {
+    border: 0;
+    padding: 0 2.4rem;
+}
+
+#page-form main fieldset + fieldset {
+    margin-top: 6.4rem;
+}
+
+#page-form main fieldset legend {
+    font: 700 30px 'Noto Sans', sans-serif;
+    color: #000;
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #E6E6F0;
+}
+
+#page-form .dropFoto {
+    width: 7em;
+    height: 7em;
+    border: none;
+    border-radius: 100%;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    padding: 0.4em;
+    margin-bottom: 1.5em;
+}
+
+#page-form .labelFoto {
+    height: 11em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 47%;
+}
+
+#page-form .containerFoto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20em;
+}
+
+#page-form .image-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-form .fotoRemove {
+    border: none;
+    background: none;
+    color: red;
+    margin-top: 1em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#page-form .image-item .fotoEscolhida{
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+}
+
+#page-form .showPassword2 {
+    align-self: flex-end;
+    padding-bottom: 1em;
+}
+
+#page-form .style-input{
+    margin-top: 1em;
+}
+
+#page-form .style-input input{
+    min-width: 17.7em;
+}
+
+#page-form .style-input-select{
+    display: flex;
+    flex-direction: column;
+}
+
+#page-form .style-input-select > div > div{
+    background-color: #F1EDEE;
+    border: none;
+}
+
+#page-form select{
+    width: 100%;
+}
+
+#page-form .def-foto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-form main label {
+    color: #5C5C5C;
+}
+
+#page-form main input {
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    min-height: 2.5em;
+}
+
+.def{
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+}
+
+.senha{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.estadoCidade{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ruaNumero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ruaNumero .style-input input:first-of-type(input){
+    min-width: 25em;
+}
+
+#page-form main footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2.4rem;
+    background: #FFF;
+    border-top: 1px solid #E6E6F0;
+    margin-top: 6.4rem;
+}
+
+#page-form main footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #9C98A6;
+}
+
+#page-form main footer p img {
+    margin-right: 2rem;
+}
+
+#page-form main footer button {
+    margin-top: 1em;
+    width: 20vw;
+    height: 15vh;
+    color: #FFF;
+    background-color: #FF0000;
+    font: 400 2vw Montserrat, sans-serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: center;
+}
+
+#page-form main footer button:hover {
+    background: #950000;
+}
+
+@media (min-width: 700px) {
+    #page-form {
+        max-width: 100vw;
+    }
+
+    #page-form main fieldset {
+        padding: 0 6.4rem;
+    }
+
+    #page-form main footer {
+        padding: 4.0rem 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #page-form main footer p {
+        justify-content: space-between;
+    }
+}
+

@@ -34,7 +34,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: api/<Tags>
-        [Authorize(Roles = "Administrador")]
+
         [HttpGet]
         public IActionResult Get()
         {
@@ -51,7 +51,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: api/<Tags>/{id}
-        [Authorize(Roles = "Administrador")]
+  
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {

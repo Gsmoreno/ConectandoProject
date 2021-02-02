@@ -36,10 +36,11 @@ namespace Conectando.Controllers
         // GET: api/<Empresa>
         [Authorize(Roles = "Empresa,Administrador")]
         [HttpGet]
-        public IActionResult Get()
+        public IEnumerable<Empresa> GetAllIncludes()
         {
-            return Ok(_empresaRepository.GetAll());
+            return _empresaRepository.GetInclude();
         }
+
 
         /// <summary>
         /// Lista uma empresa pelo ID
@@ -51,11 +52,11 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // GET: api/<Empresa>/{id}
-        [Authorize(Roles = "Empresa,Administrador")]
+        [Authorize(Roles = "Empresa, Administrador")]
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public IActionResult ListarPor(int id)
         {
-            return Ok(_empresaRepository.GetById(id));
+            return Ok(_empresaRepository.ListarPorId(id));
         }
 
         /// <summary>
@@ -68,7 +69,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // POST: api/<Empresa>
-        [Authorize(Roles = "Empresa,Administrador")]
+
         [HttpPost]
         public IActionResult Post(Empresa novaEmpresa)
         {

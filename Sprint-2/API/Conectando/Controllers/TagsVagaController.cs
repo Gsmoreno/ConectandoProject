@@ -33,7 +33,7 @@ namespace Conectando.Controllers
         public IActionResult Get()
         {
             // Retora a resposta da requisição fazendo a chamada para o método
-            return Ok(_tagsVagaRepository.Listar());
+            return Ok(_tagsVagaRepository.GetAllInclude(x => x.IdTagsNavigation, x => x.IdVagaNavigation));
         }
 
         /// <summary>

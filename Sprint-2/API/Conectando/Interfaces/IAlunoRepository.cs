@@ -10,5 +10,10 @@ namespace Conectando.Interfaces
     {
         void Atualizar(Aluno alunoAtualizado, int id);
         Aluno Login(string entrada, string senha);
+
+        List<Aluno> BuscarAlunosVagas(int id);
+
+        IEnumerable<Aluno> GetIncludes();
+        Aluno GetIncludeId(int id);
     }
 }

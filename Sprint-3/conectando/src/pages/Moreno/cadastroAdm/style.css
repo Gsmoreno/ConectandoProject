@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.tudoo{
+    height: 120vh;
+}
+
+.inverter h1{
+    font: 700 40px 'Noto Sans', sans-serif;
+    color: white;
+}
+
+
+.tudoo p{
+    font: 400 20px Montserrat, sans-serif;
+
+}
+
+
+.tudoo p:first-of-type{
+    font: 400 20px Montserrat, sans-serif;
+ 
+}
+
+.headerAdm{
+    /* background: linear-gradient(270deg, #2F8AB7 , #3ABDE6 ); */
+     background: linear-gradient(90deg, #FE0000 0%, #950000 100%);
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+}
+
+input.button{
+    padding: 0;
+}
+    
+
+.inverter{
+    color: white;
+    padding-top: 2vh;
+    width: 100%;
+    margin-top: -5vh;
+}
+
+.arrow{
+    margin-top: 3vh;
+    margin-right: 70vw;
+
+}
+
+.arrumarTabela{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabela{
+    width: 38.318254390633314vw;
+    
+
+    margin-top: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#linha{
+    width: 100%;
+    height: 0.5px;
+    background-color: #EDEDED;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.meio{
+      width: 38.318254390633314vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.bottom{
+    display: flex;
+    width: 38.318254390633314vw;
+    height: 25.183673469387756vh;
+
+    background-color: #DBDBDB;
+    border-radius: 0px 0px 15px 15px;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+#together{
+    height:22vh;
+    display: flex;
+    align-items: center;
+}
+
+.botao{
+    background-color: #FF0000 ;
+    display: flex;
+    justify-content: center;
+    width: 5.5vw;
+    height: 10vh;
+    font-size: 3px;
+    color: white;
+    border: none;
+    font: 400 20px Montserrat, sans-serif;
+    border-radius: 15px ;
+    align-items: center;
+    
+}
+
+

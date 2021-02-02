@@ -1,0 +1,15 @@
+.buttonMain{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ 
+.button{    
+    width: 10.6439595529537vw;
+    min-height: 8.16326530612245vh;
+    
+    border: 0;
+    color: #ffff;
+    
+}

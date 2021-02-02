@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Conectando.Repositories
@@ -42,6 +43,12 @@ namespace Conectando.Repositories
         {
             return ctx.Set<TEntity>().ToList();
         }
+
+        public IEnumerable<TEntity> GetAllInclude(Expression<Func<TEntity, object>> include1, Expression<Func<TEntity, object>> include2)
+        {
+            return ctx.Set<TEntity>().Include(include1).Include(include2).ToList();
+        }
+
 
         public TEntity GetById(int id)
         {

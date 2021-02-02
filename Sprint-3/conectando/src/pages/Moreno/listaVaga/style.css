@@ -1,0 +1,14 @@
+.centrovag{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10vw; 
+}
+
+.cadastro a{
+    color: #6D6969;
+    display: flex;
+    font: 400 16px Montserrat, sans-serif;
+    justify-content: flex-end;
+    margin-right: 3em;
+}

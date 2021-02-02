@@ -1,0 +1,32 @@
+.tag{
+    width: 9vw;
+    height: 9vh;
+    background-color: #3ABDE6;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tag:hover h3 {
+    display: none;
+    transition: 0.5s;
+}
+
+.tag:hover::after{
+    width: 9vw;
+    height: 9vh;
+    background-color: #FF0000;
+    border-radius: 20px;
+    font: 700 30px Montserrat, sans-serif;
+    content: "X";
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}

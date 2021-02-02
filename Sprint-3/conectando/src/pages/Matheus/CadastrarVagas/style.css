@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+
+.cadastroVagas{
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+}
+
+.iconVoltar{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 14vw;
+    margin-right: 15vw;
+}
+
+.headerCadastro{
+    background: linear-gradient(270deg,#3ABDE6 0%, #2F8AB7 100% );
+    display: flex;
+    color: white;
+    height: 230px;
+}
+
+.textHeaderCadastro{
+    margin-top: 50px;
+}
+
+.formularioCadastro{
+    width: 40vw;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 50px;
+    padding-bottom: 0;
+    position: relative;
+    margin-top: -50px;
+}
+
+.input1{
+    min-width: 17.7em;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    resize: vertical;
+
+}
+
+.input1 ,#requisitos, #detalhes{
+    background-color: #F1EDEE;
+    width: 100%;
+}
+
+
+.divisao{
+    height: 1px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.form-divs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-Enviar{
+    background-color: #dbdbdb;
+    width: 40vw;
+    padding: 30px;
+    padding-right: 70px;
+    margin-top: 20px;
+    margin-left: -50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alertaCirculo{
+    color: red;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+}
+
+.alerta{
+    display: flex;
+    align-items: center;
+}
+
+.buttonEnviar{
+    background-color: #3ABDE6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.caixa-detalhada{
+    background: #F1EDEE;
+    margin-top: 1em;
+    display: inline-block;
+    height: 120px;
+    resize: none;
+}
+
+.input1-select{
+    background: #F1EDEE;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    margin-top: 1em;
+}

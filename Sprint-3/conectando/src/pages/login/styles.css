@@ -1,0 +1,71 @@
+span{
+    margin-top: 0.5em;
+    font: 400 20px Montserrat, sans-serif;
+}
+
+.containerLogin {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/images/linhas.svg') no-repeat;
+    background-size: 100rem;
+    background-position: 0% 100%;
+}
+
+.logos img:first-child{
+    height: 4em;
+}
+.logos img:last-child{
+    height: 2em;
+}
+
+.logos{
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.form h1 {
+    padding-bottom: 1em;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form a {
+    color: black;
+}
+
+.form .style-input input{
+    border: none;
+}
+
+.form .style-input{
+    padding: 1em;
+    color: #6D6969;
+}
+
+.form button {
+    margin-top: 1em;
+    width: 11vw;
+    height: 7.6vh;
+    color: #FFF;
+    background-color: #FF0000;
+    font: 400 25px Montserrat, sans-serif;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: #950000;
+}

@@ -1,5 +1,7 @@
-﻿using Conectando.Domains;
+﻿using Conectando.Contexts;
+using Conectando.Domains;
 using Conectando.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,8 @@ namespace Conectando.Repositories
 {
     public class InscricaoRepository : RepositoryBase<Inscricao>, IInscricaoRepository
     {
+        ConectandoContext ctx = new ConectandoContext();
+
         public void Atualizar(Inscricao inscricaoAtualizado, int id)
         {
             Inscricao inscricaoBuscado = GetById(id);
@@ -27,6 +31,21 @@ namespace Conectando.Repositories
             }
 
             Update(inscricaoBuscado);
+        }
+
+        public List<Inscricao> BuscarInscricoes(int id)
+        {
+            return ctx.Inscricao.Include(x => x.IdAlunoNavigation).ThenInclude(x => x.IdCursoNavigation).Where(x => x.IdVaga == id).ToList();
+        }
+
+        public IEnumerable<Inscricao> GetTudo()
+        {
+            return ctx.Inscricao.Include(x => x.IdAlunoNavigation).Include(y => y.IdVagaNavigation).ThenInclude(z => z.IdEmpresaNavigation);
+        }
+
+        public List<Inscricao> ListarVagaIdAluno(int id)
+        {
+            return ctx.Inscricao.Include(x => x.IdVagaNavigation).ThenInclude(x => x.IdEmpresaNavigation).Include(x => x.IdVagaNavigation).ThenInclude(x => x.IdEnderecoNavigation).Where(x => x.IdAluno == id).ToList();
         }
     }
 }

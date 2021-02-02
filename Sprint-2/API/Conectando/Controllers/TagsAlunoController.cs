@@ -39,7 +39,7 @@ namespace Conectando.Controllers
         public IActionResult Get()
         {
             // Retora a resposta da requisição fazendo a chamada para o método
-            return Ok(_tagsAlunoRepository.Listar());
+            return Ok(_tagsAlunoRepository.GetAllInclude(x => x.IdAlunoNavigation, x => x.IdTagsNavigation));
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace Conectando.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         // POST: api/<TagsAluno>
-        [Authorize(Roles = "Aluno")]
+
         [HttpPost]
         public IActionResult Post(TagsAluno novaTag)
         {

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+
+.aluno p{
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-size: 18px;
+    padding-left: 73vw;
+    
+}
+
+.menulista{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    color: #6D6969;
+    
+    
+}
+
+nav ul > li{
+    padding-left: 2em;
+    
+}
+
+nav ul > li > a{
+    color: #6D6969;
+    
+}
+
+
+.hr{
+    width: 97vw;
+}
+
+
+
+.cool-link::after{
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    border-bottom: 5px solid #6D6969;
+    transition: width .5s;
+    
+}
+
+.cool-link:hover::after{
+    width: 70%;
+    transition: width .5s;
+    
+}
+/* ===============FIM-NAV============= */
+
+
+/* ===============START-LISTA============= */
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+.containerr{
+    background: #F1EDEE;
+    border-radius: 15px;
+    max-width: 50vw;
+    max-height: 24vh; 
+    color: #6D6969;
+    padding: 2em;
+    
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.espacoo{
+    margin: 1em 0;
+}
+
+.listaaa{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listaaa h2{
+    padding-left: 0.5em;
+}
+
+.listaaa p{
+    padding-left: 16em;
+}
+
+.aluno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 3vw;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+#separado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.baixo{
+    margin-bottom: 1em;
+}
+
+
+.listaaa img{
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    display: flex;
+    
+}
+
+.aluno h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6969;
+}
+
+.infoss {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.infoss ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.infoss ul div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.infoss ul li{
+    
+    margin: 0 2em;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+icon{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    display: flex;
+    
+    align-items: center;
+}
+
+
+
+/* ===============FIM-LISTA============= */
+
+
+svg {
+    margin-right: 0.5em;
+}
+
+

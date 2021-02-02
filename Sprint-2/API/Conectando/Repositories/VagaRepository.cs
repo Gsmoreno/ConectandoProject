@@ -97,9 +97,38 @@ namespace Conectando.Repositories
 
             ctx.SaveChanges();
         }
+
+        public List<Vaga> BuscarPorId(int id)
+        {
+            return ctx.Vaga.Where(x => x.IdEmpresa == id).ToList();
+        }
+
+        public int CadastroVagaReturnId(Vaga vaga)
+        {
+            Vaga v = vaga;
+            ctx.Vaga.Add(v);
+            ctx.SaveChanges();
+            return v.IdVaga;
+        }
+
+        public Vaga DetalheVaga(int id)
+        {
+            return ctx.Vaga.Include(x => x.IdEmpresaNavigation).Include(x => x.IdEnderecoNavigation).Include(x => x.Inscricao).Include(x => x.TagsVaga).Where(x => x.IdVaga == id).FirstOrDefault();
+        }
+
         public List<Vaga> ListarAlunosInscritos()
         {
             return ctx.Vaga.Include(x => x.Inscricao).ToList();
+        }
+
+        public List<Vaga> ListarVagaCompleta()
+        {
+            return ctx.Vaga.Include(x => x.IdEmpresaNavigation).Include(x => x.IdEnderecoNavigation).Include(x => x.Inscricao).ToList();
+        }
+
+        public List<Vaga> ListarVagaId( int id)
+        {
+            return ctx.Vaga.Include(x => x.IdEmpresaNavigation).Include(x => x.IdEnderecoNavigation).Include(x => x.Inscricao).Where(x => x.IdEmpresa == id).ToList();
         }
     }
 }
